@@ -25,6 +25,7 @@ export default function HomePage() {
         <section className="hero">
           <div className="wrap">
             <p className="eyebrow">{site.eyebrow}</p>
+            <p className="hero-name">{site.name}</p>
             <h1>{site.headline}</h1>
             <p className="hero-copy">{site.summary}</p>
             <ul className="hero-links">

@@ -129,7 +129,7 @@ h3,
 }
 
 .hero {
-  padding: 72px 0 80px;
+  padding: 56px 0 64px;
 }
 
 .eyebrow {
@@ -140,10 +140,19 @@ h3,
   color: var(--muted);
 }
 
+.hero-name {
+  margin: 0 0 18px;
+  font-family: var(--font-display), Newsreader, Georgia, serif;
+  font-style: italic;
+  font-size: clamp(26px, 3.2vw, 34px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
 .hero h1 {
-  margin: 0 0 28px;
-  max-width: 16ch;
-  font-size: clamp(36px, 6vw, 58px);
+  margin: 0 0 24px;
+  max-width: 17ch;
+  font-size: clamp(32px, 5vw, 48px);
 }
 
 .hero-copy {
@@ -475,12 +484,19 @@ h3,
 }
 
 @media (max-width: 560px) {
+  .header-inner {
+    align-items: flex-start;
+    padding: 12px 0;
+    gap: 10px;
+  }
+
   .nav {
-    display: none;
+    gap: 8px 14px;
+    font-size: 11px;
   }
 
   .hero h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .process-list li {
