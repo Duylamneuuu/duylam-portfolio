@@ -20,16 +20,25 @@ npm start
 
 ## Deploy on Vercel Hobby
 
-Preferred project name: `duylam-portfolio`.
+`main` is deploy-ready. Preferred project name: `duylam-portfolio`. Stay on **Hobby** — do not upgrade.
 
-1. Push this repository to GitHub (`Duylamneuuu/duylam-portfolio`).
-2. In [Vercel](https://vercel.com/new), sign in with GitHub on a **Hobby** plan.
-3. Import `Duylamneuuu/duylam-portfolio`.
-4. Framework preset: Next.js. Root directory: `./`. No environment variables.
-5. Deploy. The public URL should look like `https://duylam-portfolio.vercel.app`.
-6. If Deployment Protection is on, turn it off for Production so the site is public.
+This cloud agent could not finish GitHub → Vercel linking because the Vercel account needs a GitHub Login Connection first.
 
-Do not upgrade the plan. This site is a static frontend and does not need Pro.
+1. Open [Vercel](https://vercel.com/login) and sign in with GitHub (Hobby).
+2. If asked, add a GitHub Login Connection: [login methods](https://vercel.com/docs/accounts/create-an-account#login-methods-and-connections).
+3. Go to [vercel.com/new](https://vercel.com/new) and import `Duylamneuuu/duylam-portfolio`.
+4. Project name: `duylam-portfolio`. Framework: Next.js. Root: `./`. No env vars.
+5. Deploy. Production URL should be `https://duylam-portfolio.vercel.app` (or the unique `.vercel.app` Vercel assigns).
+6. Project → Settings → Deployment Protection: turn off Vercel Authentication for Production so the site is public.
+
+CLI alternative from a logged-in Hobby account:
+
+```bash
+npx vercel login
+npx vercel --yes --prod --name duylam-portfolio
+```
+
+The GitHub repo is already on `main` and ready to import. No paid plan is required.
 
 ## Claims
 

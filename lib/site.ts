@@ -38,6 +38,8 @@ export const process = {
     "I’m especially interested in the space between business problems and technology: turning unclear problems into usable product flows, deciding what should and should not be built, and using AI to shorten the path from idea to evidence.",
 } as const;
 
+const workAsset = (path: string) => `/work/${path}`;
+
 export type WorkImage = {
   src: string;
   alt: string;
@@ -83,7 +85,7 @@ export const projects: Project[] = [
     status:
       "Feature-complete prototype. Production verification remains pending.",
     hero: {
-      src: "/work/giaotrinh/02-listing-detail.png",
+      src: workAsset("giaotrinh/02-listing-detail.png"),
       alt: "GiaoTrinh listing detail with product photos, price, school, meetup location, and contact still hidden",
       width: 1440,
       height: 900,
@@ -91,21 +93,21 @@ export const projects: Project[] = [
     },
     frames: [
       {
-        src: "/work/giaotrinh/01-discovery.png",
+        src: workAsset("giaotrinh/01-discovery.png"),
         alt: "GiaoTrinh search results for a calculator listing with school and price context",
         width: 1440,
         height: 900,
         caption: "Discovery — search and school-aware listings",
       },
       {
-        src: "/work/giaotrinh/03-safety.png",
+        src: workAsset("giaotrinh/03-safety.png"),
         alt: "GiaoTrinh safety acknowledgement shown before seller contact is revealed",
         width: 1440,
         height: 900,
         caption: "Safety step before any seller contact",
       },
       {
-        src: "/work/giaotrinh/04-mobile.png",
+        src: workAsset("giaotrinh/04-mobile.png"),
         alt: "GiaoTrinh mobile home feed with textbook and study-material listings",
         width: 780,
         height: 1688,
@@ -134,7 +136,7 @@ export const projects: Project[] = [
     status:
       "Demo-ready on a development deployment. Moving toward a small closed beta. Not production launched.",
     hero: {
-      src: "/work/clubdrop/01-hero-issue.png",
+      src: workAsset("clubdrop/01-hero-issue.png"),
       alt: "Clubdrop public buyer page using the Issue magazine template for a campus merch drop",
       width: 1440,
       height: 900,
@@ -142,21 +144,21 @@ export const projects: Project[] = [
     },
     frames: [
       {
-        src: "/work/clubdrop/03-template-atelier.png",
+        src: workAsset("clubdrop/03-template-atelier.png"),
         alt: "Clubdrop Atelier buyer template with a quiet split layout for merch preorder",
         width: 1440,
         height: 900,
         caption: "Buyer page — Atelier template",
       },
       {
-        src: "/work/clubdrop/06-organizer-review-publish.png",
+        src: workAsset("clubdrop/06-organizer-review-publish.png"),
         alt: "Clubdrop organizer review screen with template picker and publish control",
         width: 1085,
         height: 2058,
         caption: "Organizer review — template, price, and publish stay human-controlled",
       },
       {
-        src: "/work/clubdrop/07-organizer-roster.png",
+        src: workAsset("clubdrop/07-organizer-roster.png"),
         alt: "Clubdrop organizer preorder roster with synthetic demo buyer data",
         width: 1085,
         height: 1818,
@@ -183,7 +185,7 @@ export const projects: Project[] = [
     ai: "I directed agents through implementation, debugging, editor automation, testing, and visual review. Humans keep the specs and validation gates. AI is a collaborator, not a one-shot generator.",
     status: "Completed competition prototype.",
     hero: {
-      src: "/work/sushiloop/03-gameplay-hero.png",
+      src: workAsset("sushiloop/03-gameplay-hero.png"),
       alt: "SushiLoop Level 5 gameplay with a conveyor loop, customer orders, and hand-drawn portrait UI",
       width: 1080,
       height: 1920,
@@ -191,14 +193,14 @@ export const projects: Project[] = [
     },
     frames: [
       {
-        src: "/work/sushiloop/01-main-menu.png",
+        src: workAsset("sushiloop/01-main-menu.png"),
         alt: "SushiLoop main menu with play, levels, and hand-drawn portrait art",
         width: 1080,
         height: 1920,
         caption: "Main menu",
       },
       {
-        src: "/work/sushiloop/04-win-result.png",
+        src: workAsset("sushiloop/04-win-result.png"),
         alt: "SushiLoop win result screen after completing a level",
         width: 1080,
         height: 1920,
